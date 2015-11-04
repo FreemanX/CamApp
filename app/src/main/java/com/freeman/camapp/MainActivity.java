@@ -202,16 +202,12 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void launchUploadActivity(boolean isImage){
+    private void launchUploadActivity(boolean isImage) {
         Intent i = new Intent(MainActivity.this, UploadActivity.class);
         i.putExtra("filePath", fileUri.getPath());
         i.putExtra("isImage", isImage);
         startActivity(i);
     }
-
-    /**
-     * ------------ Helper Methods ----------------------
-     * */
 
     /**
      * Creating file uri to store image/video
